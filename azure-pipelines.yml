@@ -10,9 +10,10 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
+- name: environment
+  value: DEV
+- name: environment
+  value: QA
 
 steps:
 - task: NuGetToolInstaller@1
